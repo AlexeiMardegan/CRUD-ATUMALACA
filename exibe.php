@@ -1,9 +1,9 @@
 <?php
 include("conecta.php");
-$sql_ultima_temp = "SELECT * FROM 'controlador' ORDER BY 'controlador'.'id' DESC limit 1"
-$sql_media = "SELECT AVG (temperatura) FROM 'controlador'";
-$sql_maxima = "SELECT MAX (temperatura) FROM 'controlador'";
-$sql_minina =  "SELECT MIN (temperatura) FROM 'controlador'";
+$sql_ultima_temp = "SELECT * FROM 'controlador4' ORDER BY 'controlador'.'id' DESC limit 1"
+$sql_media = "SELECT AVG (temperatura) FROM 'controlador4'";
+$sql_maxima = "SELECT MAX (temperatura) FROM 'controlador4'";
+$sql_minina =  "SELECT MIN (temperatura) FROM 'controlador4'";
 
 $consulta = mysqli_query($conn,$sql_ultima_temp);
 $resultado = mysqli_fetch_array($consulta);
